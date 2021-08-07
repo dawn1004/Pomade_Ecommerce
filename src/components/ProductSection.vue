@@ -106,7 +106,6 @@ export default {
 .product-container {
   width: 350px;
   height: 400px;
-  /* background: rgb(116, 45, 45); */
   position: relative;
   margin-top: 0px;
   opacity: 0;
@@ -183,4 +182,12 @@ export default {
 .bottom p {
   font-size: 20px;
 }
+
+@media only screen and (max-width: 600px) {
+  .productsss-container {
+    /* background: red; */
+    margin: 20px;
+  }  
+}
+
 </style>

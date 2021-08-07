@@ -67,6 +67,7 @@ export default {
   height: 100vh;
   position: fixed;
   background: white;
+  overflow: hidden;
   top: 0;
   left: -100vw;
   z-index: 5;
@@ -88,7 +89,6 @@ export default {
 .img-container {
   width: 500px;
   height: 500px;
-  background: rgb(85, 29, 29);
 }
 .img-container img {
   height: 100%;
@@ -154,4 +154,28 @@ export default {
 .arrow-back:hover {
   fill: rgb(99, 99, 99);
 }
+
+
+
+@media only screen and (max-width: 600px) {
+  .container{
+    flex-direction: column;
+  }
+  .img-container {
+    width: 80vw;
+    height: auto;
+  }
+  .details-container {
+    flex: 1;
+    margin-top: 10px;
+    max-width: 100%;
+  }
+  .details-container h1 {
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    font-size: 28px;
+    font-weight: 500;
+  }
+}
+  
 </style>

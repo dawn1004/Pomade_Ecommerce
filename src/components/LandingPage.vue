@@ -62,6 +62,8 @@ export default {
   /* width: 320px; */
   height: fit-content;
   margin-top: 30%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .landing .information .container-info h1 {
   font-size: 52px;
@@ -108,7 +110,8 @@ export default {
   transition: 1s;
 }
 
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 1000px) {
   .landing {
     flex-direction: column-reverse;
   }
@@ -131,6 +134,7 @@ export default {
     margin-top: 0px;
     /* background: red; */
     margin-left: 50vw;
+    text-align: center;
     transform: translateX(-50%);
   }
   .landing .information .container-info h1 {

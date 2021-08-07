@@ -20,7 +20,6 @@
 
     <svg
       class="navbar"
-      width="fit-content"
       height="25"
       viewBox="0 0 48 30"
       fill="none"
@@ -80,7 +79,7 @@ export default {
 <style scoped>
 .nav {
   height: 70px;
-  width: 100vw;
+  width: 100%;
   background: #f1eed8;
   display: flex;
   justify-content: center;
@@ -117,6 +116,7 @@ export default {
 
 .navbar {
   display: none;
+  cursor: pointer;
 }
 .lines {
   transition: 0.5s;
@@ -124,6 +124,14 @@ export default {
 
 @media only screen and (max-width: 600px) {
   .nav {
+    height: 70px;
+    width: 100%;
+    background: #f1eed8;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+
+    align-items: center;
   }
   .nav .logo {
     font-weight: bold;

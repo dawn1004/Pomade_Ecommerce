@@ -62,10 +62,17 @@ export default {
   margin-top: 30px;
   display: flex;
   justify-content: space-evenly;
+  /* background: red; */
 }
 .cart-items-container {
   width: 550px;
 }
+@media only screen and (max-width: 600px) {
+  .cart-items-container {
+    width: 100%;
+  }
+}
+
 .item {
   display: flex;
   /* align-items: center; */
